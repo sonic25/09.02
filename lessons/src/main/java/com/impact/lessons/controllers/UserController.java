@@ -13,11 +13,13 @@ public class UserController {
 
     @PostMapping("/users/create")
     public User createUser(@RequestBody User user) {
+
         return userService.createUser(user);
     }
 
     @GetMapping("/users/get_all")
     public List<User> getAllUsers() {
-        return userService.getAllUsers();
+
+        return userService.getAllUsers();jhuygdgtyijoke
     }
 }
